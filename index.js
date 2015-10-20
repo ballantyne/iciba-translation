@@ -7,7 +7,7 @@ request.cookie('ICIBA_HUAYI_COOKIE=1');
 
 var Iciba = function(query) {
   this.base = 'http://fy.iciba.com/api.php';
-  this.input = query
+  this.input = query;
   this.query  = {q: query};
   this.chinese = false;
 
