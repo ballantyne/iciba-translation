@@ -1,6 +1,6 @@
 {
   "name": "cmdfy",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "'definition scraper'",
   "main": "index.js",
 

@@ -3,10 +3,10 @@
 var chalk = require('chalk');
 var Iciba = require('../index');
 
-if (process.argv.length === 2) { 
+if (process.argv.length === 1) { 
   var words = process.argv[2];
 }
-if (process.argv.length > 2) {
+if (process.argv.length > 1) {
   var words = process.argv;
   words.shift();
   words.shift();
