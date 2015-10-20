@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+var chalk = require('chalk');
+var Iciba = require('../index');
+
+if (process.argv.length === 3) { 
+  var words = process.argv[2];
+}
+if (process.argv.length > 3) {
+  var words = process.argv;
+  words.shift();
+  words.shift();
+  words = words.join(' ');
+}
+
+new Iciba(words).post(function(translation) {
+  console.log(chalk.bgRed(words));
+  console.log(chalk.inverse(translation));
+});
+
