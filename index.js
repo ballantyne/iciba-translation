@@ -34,7 +34,13 @@ Iciba.prototype.post = function(cb) {
     } else { 
       var translation = JSON.parse(body);
       $ = cheerio.load(translation.ret);
+      var other_translation = $('.dTrans .dd').text()
       translation = $('.translate_result').text();
+      if (translation.length < other_translation.length) {
+        translation = other_translation;
+      }
+
+
       cb(translation);
     }
   });
