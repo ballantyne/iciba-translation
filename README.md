@@ -4,7 +4,7 @@ A command-line/npm module to translate chinese using fy.iciba.com
 
 ## Installation
 
-sudo npm install cmdfy -g
+sudo npm install iciba_command_line -g
 
 ## Usage
 
