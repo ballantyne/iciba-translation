@@ -1,5 +1,5 @@
 {
-  "name": "cmdfy",
+  "name": "iciba_command_line",
   "version": "1.0.9",
   "description": "'definition scraper'",
   "main": "index.js",
